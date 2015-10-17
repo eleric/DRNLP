@@ -2,14 +2,26 @@ package dr.nlp.token;
 
 import dr.nlp.token.type.TokenType;
 
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlRootElement;
+
 /**
  * Created by eleri_000 on 10/15/2015.
  * Immutable object that represents component of a sentence.
  */
+@XmlRootElement
 public class Token {
 
+	@XmlElement
 	private final String value;
+	@XmlElement
 	private final TokenType type;
+
+	// Include to get JAXB to work
+	private Token() {
+		value = "";
+		type = TokenType.UNKNOWN;
+	}
 
 	public Token(String value, TokenType type) {
 		this.value = value;
