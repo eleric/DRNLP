@@ -19,8 +19,6 @@ public class XMLDocumentTranslator implements DocumentTranslator {
 	@Override
 	public String translateToString(Document document) {
 		return convert(document);
-//		document.getSentences().stream().map((s)->s.getTokens().stream().map((t)->t.getValue()).collect(
-//				Collectors.joining(","))).collect(Collectors.joining("\n"));
 	}
 
 	@Override
