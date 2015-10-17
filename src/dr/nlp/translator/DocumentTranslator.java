@@ -11,6 +11,5 @@ import java.io.OutputStream;
 public interface DocumentTranslator {
 	String translateToString(Document document);
 	void write(Document document, OutputStream os) throws IOException;
-	void append(Document document, StringBuilder buf) throws IOException;
 
 }

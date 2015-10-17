@@ -33,18 +33,15 @@ import java.util.List;
  * Created by eleri_000 on 10/17/2015.
  */
 public class DRNLPFactory {
-	public Atom createPunctuationAtom()
-	{
+	public Atom createPunctuationAtom() {
 		return new PunctuationAtom();
 	}
 
-	public Atom createWhiteSpaceAtom()
-	{
+	public Atom createWhiteSpaceAtom() {
 		return new WhiteSpaceAtom();
 	}
 
-	public Atom createWordAtom()
-	{
+	public Atom createWordAtom() {
 		return new WordAtom();
 	}
 
@@ -52,48 +49,40 @@ public class DRNLPFactory {
 		return new InMemoryArrayDataInput(path);
 	}
 
-	public DocumentParser createDocumentParser()
-	{
+	public DocumentParser createDocumentParser() {
 		return new DocumentParserImpl();
 	}
 
-	public Processor createOrderedProcessor(List<Processor<Character>> processors)
-	{
+	public Processor createOrderedProcessor(
+			List<Processor<Character>> processors) {
 		return new OrderedProcessor(processors);
 	}
 
-	public Processor createWordProcessor()
-	{
+	public Processor createWordProcessor() {
 		return new WordProcessor();
 	}
 
-	public Processor createWhiteSpaceProcessor()
-	{
+	public Processor createWhiteSpaceProcessor() {
 		return new WhiteSpaceProcessor();
 	}
 
-	public Processor createPunctuationProcessor()
-	{
+	public Processor createPunctuationProcessor() {
 		return new PunctuationProcessor();
 	}
 
-	public Dictionary createDictionary()
-	{
+	public Dictionary createDictionary() {
 		return new DictionaryImpl();
 	}
 
-	public Document createDocument()
-	{
+	public Document createDocument() {
 		return new DocumentImpl();
 	}
 
-	public Sentence createSentence()
-	{
+	public Sentence createSentence() {
 		return new SentenceImpl();
 	}
 
-	public DocumentTranslator createDocumentTranslator()
-	{
+	public DocumentTranslator createDocumentTranslator() {
 		return new XMLDocumentTranslator();
 	}
 }

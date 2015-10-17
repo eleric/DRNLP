@@ -25,13 +25,7 @@ public class XMLDocumentTranslator implements DocumentTranslator {
 
 	@Override
 	public void write(Document document, OutputStream os) throws IOException {
-
-	}
-
-	@Override
-	public void append(Document document, StringBuilder buf)
-			throws IOException {
-
+		os.write(convert(document).getBytes());
 	}
 
 	private String convert(Document document) {
@@ -44,9 +38,9 @@ public class XMLDocumentTranslator implements DocumentTranslator {
 
 			ByteArrayOutputStream baos = new ByteArrayOutputStream();
 			jaxbMarshaller.marshal(document, baos);
-			jaxbMarshaller.marshal(document, System.out);
 
-			return baos.toString(java.nio.charset.StandardCharsets.UTF_8.name());
+			return baos.toString(
+					java.nio.charset.StandardCharsets.UTF_8.name());
 		} catch (Exception e)
 		{
 			throw new RuntimeException("Unexpected error occured when tranlating document to xml.", e);

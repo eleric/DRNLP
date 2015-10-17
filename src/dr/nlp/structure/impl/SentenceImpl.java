@@ -13,7 +13,7 @@ import java.util.List;
  */
 @XmlRootElement(name = "sentence")
 public class SentenceImpl implements Sentence {
-	@XmlElement
+	@XmlElement(name = "token")
 	private final List<Token> tokens = new LinkedList<>();
 
 	public List<Token> getTokens() {

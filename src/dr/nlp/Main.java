@@ -19,7 +19,6 @@ public class Main {
         Path path = Paths.get("C:\\DigitalReasoning\\unzipped\\nlp_data.txt");
 
         Document document = parser.parse(path);
-        String translation = translator.translateToString(document);
-        System.out.print(translation);
+        translator.write(document, System.out);
     }
 }
