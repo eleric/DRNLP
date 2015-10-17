@@ -10,6 +10,8 @@ import dr.nlp.parser.DocumentParser;
 import dr.nlp.parser.impl.DocumentParserImpl;
 import dr.nlp.processor.Processor;
 import dr.nlp.processor.impl.OrderedProcessor;
+import dr.nlp.processor.impl.PunctuationProcessor;
+import dr.nlp.processor.impl.WhiteSpaceProcessor;
 import dr.nlp.processor.impl.WordProcessor;
 import dr.nlp.structure.Dictionary;
 import dr.nlp.structure.Document;
@@ -63,6 +65,16 @@ public class DRNLPFactory {
 	public Processor createWordProcessor()
 	{
 		return new WordProcessor();
+	}
+
+	public Processor createWhiteSpaceProcessor()
+	{
+		return new WhiteSpaceProcessor();
+	}
+
+	public Processor createPunctuationProcessor()
+	{
+		return new PunctuationProcessor();
 	}
 
 	public Dictionary createDictionary()

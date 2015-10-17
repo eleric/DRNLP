@@ -1,27 +1,21 @@
 package dr.nlp.processor.impl;
 
 import dr.nlp.atom.Atom;
-import dr.nlp.atom.impl.PunctuationAtom;
 import dr.nlp.atom.impl.WhiteSpaceAtom;
 import dr.nlp.atom.impl.WordAtom;
 import dr.nlp.dataInput.DataInput;
-import dr.nlp.exception.WrongTypeException;
 import dr.nlp.processor.Processor;
 import dr.nlp.token.Token;
 import dr.nlp.token.type.TokenType;
 
 import java.io.EOFException;
-import java.io.IOException;
-import java.io.InputStream;
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Optional;
 
 /**
- * Created by eleri_000 on 10/16/2015.
+ * Created by eleri_000 on 10/17/2015.
  */
-public class WordProcessor implements Processor<Character> {
-	final Atom tokenAtom = new WordAtom();
+public class WhiteSpaceProcessor implements Processor<Character> {
+	final Atom tokenAtom = new WhiteSpaceAtom();
 
 	@Override
 	public Optional<Token> process(DataInput<Character> dataInput) throws
@@ -60,6 +54,6 @@ public class WordProcessor implements Processor<Character> {
 
 	private Optional<Token> makeToken(StringBuilder buf)
 	{
-		return Optional.of(new Token(buf.toString(), TokenType.WORD));
+		return Optional.of(new Token(buf.toString(), TokenType.WHITE_SPACE));
 	}
 }

@@ -13,4 +13,5 @@ public interface Dictionary {
 	Set<Token> getTokens();
 	Set<Token> getTokens(TokenType type);
 	Token putToken(Token token);
+	boolean contains(Token token);
 }

@@ -51,4 +51,9 @@ public class DictionaryImpl implements Dictionary {
 		}
 		return tokens.get(token);
 	}
+
+	@Override
+	public boolean contains(Token token) {
+		return tokens.containsKey(token);
+	}
 }

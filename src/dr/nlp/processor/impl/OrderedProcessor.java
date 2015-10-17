@@ -34,6 +34,7 @@ public class OrderedProcessor implements Processor<Character> {
 			{
 				return tokenOpt;
 			}
+			dataInput.stepBack();
 		}
 		Optional<Token> unknown = Optional.of(new Token(dataInput.get().toString(), TokenType.UNKNOWN));
 		dataInput.stepBack();
