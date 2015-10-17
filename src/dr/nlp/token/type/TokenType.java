@@ -7,5 +7,6 @@ public enum TokenType {
 	WHITE_SPACE,
 	PUNCTUATION,
 	WORD,
+	PROPER_NOUN,
 	UNKNOWN
 }
