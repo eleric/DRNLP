@@ -1,16 +1,17 @@
 package dr.nlp.structure;
 
-import java.util.LinkedList;
+import dr.nlp.structure.Sentence;
+
 import java.util.List;
 
 /**
- * Created by eleri_000 on 10/15/2015.
+ * Created by eleri_000 on 10/16/2015.
  */
-public class Document {
-	private final List<Sentence> sentences = new LinkedList<>();
-
-	public List<Sentence> getSentences() {
-		return sentences;
-	}
-
+public interface Document {
+	/**
+	 *
+	 * @return
+	 * Lists sentences in order for a given document
+	 */
+	List<Sentence> getSentences();
 }

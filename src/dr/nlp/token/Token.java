@@ -1,32 +1,27 @@
-package dr.nlp.structure;
+package dr.nlp.token;
+
+import dr.nlp.token.type.TokenType;
 
 /**
  * Created by eleri_000 on 10/15/2015.
+ * Immutable object that represents component of a sentence.
  */
 public class Token {
-	public enum Type
-	{
-		WHITE_SPACE,
-		PUNCTUATION,
-		WORD
+
+	private final String value;
+	private final TokenType type;
+
+	public Token(String value, TokenType type) {
+		this.value = value;
+		this.type = type;
 	}
-	private String value;
-	private Type type;
 
 	public String getValue() {
 		return value;
 	}
 
-	public void setValue(String value) {
-		this.value = value;
-	}
-
-	public Type getType() {
+	public TokenType getType() {
 		return type;
-	}
-
-	public void setType(Type type) {
-		this.type = type;
 	}
 
 	@Override
