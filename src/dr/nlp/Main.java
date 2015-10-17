@@ -5,7 +5,6 @@ import dr.nlp.parser.DocumentParser;
 import dr.nlp.structure.Document;
 import dr.nlp.translator.DocumentTranslator;
 
-import java.io.FileDescriptor;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.OutputStream;
@@ -22,7 +21,6 @@ public class Main {
 
         DocumentParser parser = factory.createDocumentParser();
         DocumentTranslator translator = factory.createDocumentTranslator();
-//        Path path = Paths.get("C:\\DigitalReasoning\\unzipped\\nlp_data.txt");
         Path path = Paths.get(inputFilename);
         OutputStream outputStream = new FileOutputStream(outputFilename);
 
