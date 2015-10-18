@@ -9,9 +9,9 @@ import java.util.List;
  */
 public interface Document {
 	/**
+	 * Lists sentences in order for a given document
 	 *
 	 * @return
-	 * Lists sentences in order for a given document
 	 */
 	List<Sentence> getSentences();
 }

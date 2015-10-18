@@ -9,9 +9,9 @@ import java.util.List;
  */
 public interface Sentence {
 	/**
+	 * Lists tokens in order for a given sentence
 	 *
 	 * @return
-	 * Lists tokens in order for a given sentence
 	 */
 	List<Token> getTokens();
 }

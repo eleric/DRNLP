@@ -7,17 +7,23 @@ import dr.nlp.atom.impl.WordAtom;
 import dr.nlp.dataInput.DataInput;
 import dr.nlp.dataInput.impl.InMemoryArrayDataInput;
 import dr.nlp.parser.DocumentParser;
+import dr.nlp.parser.FolderParser;
 import dr.nlp.parser.impl.DocumentParserImpl;
+import dr.nlp.parser.impl.ZipFolderParser;
 import dr.nlp.processor.Processor;
 import dr.nlp.processor.impl.*;
 import dr.nlp.structure.Dictionary;
 import dr.nlp.structure.Document;
+import dr.nlp.structure.Folder;
 import dr.nlp.structure.Sentence;
 import dr.nlp.structure.impl.DictionaryImpl;
 import dr.nlp.structure.impl.DocumentImpl;
+import dr.nlp.structure.impl.FolderImpl;
 import dr.nlp.structure.impl.SentenceImpl;
 import dr.nlp.translator.DocumentTranslator;
+import dr.nlp.translator.FolderTranslator;
 import dr.nlp.translator.impl.XMLDocumentTranslator;
+import dr.nlp.translator.impl.XMLFolderTranslator;
 
 import java.io.IOException;
 import java.net.URISyntaxException;
@@ -81,11 +87,22 @@ public class DRNLPFactory {
 		return new DocumentImpl();
 	}
 
+	public Folder createFolder() {
+		return new FolderImpl();
+	}
+
 	public Sentence createSentence() {
 		return new SentenceImpl();
 	}
 
+	public FolderParser createZipFolderParser(Dictionary masterDictionary) {
+		return new ZipFolderParser(masterDictionary);
+	}
+
 	public DocumentTranslator createDocumentTranslator() {
 		return new XMLDocumentTranslator();
+	}
+	public FolderTranslator createFolderTranslator() {
+		return new XMLFolderTranslator();
 	}
 }
