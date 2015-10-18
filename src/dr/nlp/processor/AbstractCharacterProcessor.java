@@ -27,6 +27,7 @@ abstract public class AbstractCharacterProcessor implements
 		if (!tokenAtom.isValid(firstEl))
 		{
 			// Can't process this element
+			dataInput.stepBack();
 			return Optional.empty();
 		}
 		else
