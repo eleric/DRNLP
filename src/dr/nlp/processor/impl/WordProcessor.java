@@ -1,6 +1,7 @@
 package dr.nlp.processor.impl;
 
 import dr.nlp.atom.impl.WordAtom;
+import dr.nlp.processor.AbstractCharacterProcessor;
 import dr.nlp.processor.Processor;
 import dr.nlp.token.type.TokenType;
 

@@ -9,10 +9,7 @@ import dr.nlp.dataInput.impl.InMemoryArrayDataInput;
 import dr.nlp.parser.DocumentParser;
 import dr.nlp.parser.impl.DocumentParserImpl;
 import dr.nlp.processor.Processor;
-import dr.nlp.processor.impl.OrderedProcessor;
-import dr.nlp.processor.impl.PunctuationProcessor;
-import dr.nlp.processor.impl.WhiteSpaceProcessor;
-import dr.nlp.processor.impl.WordProcessor;
+import dr.nlp.processor.impl.*;
 import dr.nlp.structure.Dictionary;
 import dr.nlp.structure.Document;
 import dr.nlp.structure.Sentence;
@@ -23,6 +20,7 @@ import dr.nlp.translator.DocumentTranslator;
 import dr.nlp.translator.impl.XMLDocumentTranslator;
 
 import java.io.IOException;
+import java.net.URISyntaxException;
 import java.nio.file.Path;
 import java.util.List;
 
@@ -56,6 +54,11 @@ public class DRNLPFactory {
 	public Processor createOrderedProcessor(
 			List<Processor<Character>> processors) {
 		return new OrderedProcessor(processors);
+	}
+
+	public Processor createProperNounProcessor()
+			throws IOException, URISyntaxException {
+		return new ProperNounProcessor();
 	}
 
 	public Processor createWordProcessor() {

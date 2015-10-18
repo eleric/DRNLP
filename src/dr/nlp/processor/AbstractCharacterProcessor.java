@@ -1,4 +1,4 @@
-package dr.nlp.processor.impl;
+package dr.nlp.processor;
 
 import dr.nlp.atom.Atom;
 import dr.nlp.atom.impl.WhiteSpaceAtom;

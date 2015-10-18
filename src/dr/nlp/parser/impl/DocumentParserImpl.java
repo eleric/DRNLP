@@ -34,6 +34,12 @@ public class DocumentParserImpl implements DocumentParser {
 	private List<Processor<Character>> processors;
 	{
 		processors = new ArrayList<>();
+		try {
+			processors.add(factory.createProperNounProcessor());
+		} catch (Exception e)
+		{
+			throw new RuntimeException("Failed to load ProperNounProcessor.", e);
+		}
 		processors.add(factory.createWordProcessor());
 		processors.add(factory.createPunctuationProcessor());
 		processors.add(factory.createWhiteSpaceProcessor());
