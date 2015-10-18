@@ -1,6 +1,8 @@
 package dr.nlp.processor.impl;
 
+import dr.nlp.atom.Atom;
 import dr.nlp.dataInput.DataInput;
+import dr.nlp.factory.DRNLPFactory;
 import dr.nlp.processor.Processor;
 import dr.nlp.token.Token;
 import dr.nlp.token.type.TokenType;
@@ -21,6 +23,9 @@ public class ProperNounProcessor implements Processor<Character> {
 	// In a production system, this would most likely be injected from
 	// a framework.
 	private final List<String> properNouns;
+	private final DRNLPFactory factory = new DRNLPFactory();
+	private Atom whitSpaceAtom = factory.createWhiteSpaceAtom();
+	private Atom punctuationAtom = factory.createPunctuationAtom();
 
 	public ProperNounProcessor() throws URISyntaxException, IOException {
 		this.properNouns = new ArrayList<>();
@@ -46,7 +51,13 @@ public class ProperNounProcessor implements Processor<Character> {
 			// If search matches any proper noun then return token
 			if (properNouns.stream().anyMatch((p)->p.equals(search)))
 			{
-				return makeToken(search);
+				char next = dataInput.get();
+				dataInput.stepBack();
+				// Proper Noun needs to be separated by white space or punctuation
+				// to be valid.
+				if (whitSpaceAtom.isValid(next)||punctuationAtom.isValid(next)) {
+					return makeToken(search);
+				}
 			}
 			// If current search string no longer has a chance of matching a
 			// proper noun. Rollback index and return empty token.

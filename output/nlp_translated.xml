@@ -271,11 +271,7 @@
                 <type>PUNCTUATION</type>
             </token>
             <token>
-                <value>Europe</value>
-                <type>PROPER_NOUN</type>
-            </token>
-            <token>
-                <value>an</value>
+                <value>European</value>
                 <type>WORD</type>
             </token>
             <token>

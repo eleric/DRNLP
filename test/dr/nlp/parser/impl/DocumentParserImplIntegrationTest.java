@@ -35,7 +35,7 @@ public class DocumentParserImplIntegrationTest {
 	@Test
 	public void testParse() throws Exception {
 		Document document = parser.parse(path);
-		assertEquals("Number of Sentences not correct.", 3,
+		assertEquals("Number of Sentences not correct.", 4,
 				document.getSentences().size());
 		assertEquals("Number of Tokens in first Sentence not correct.", 11,
 				document.getSentences().get(0).getTokens().size());
@@ -49,5 +49,8 @@ public class DocumentParserImplIntegrationTest {
 		assertEquals("Number of White Spaces Tokens in first Sentence not correct.", 4,
 				document.getSentences().get(0).getTokens().stream()
 						.filter((t) -> t.getType() == TokenType.WHITE_SPACE).count());
+		assertEquals("Number of Proper Noun Tokens in second Sentence not correct.", 2,
+				document.getSentences().get(1).getTokens().stream()
+						.filter((t) -> t.getType() == TokenType.PROPER_NOUN).count());
 	}
 }
