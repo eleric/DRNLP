@@ -29,14 +29,15 @@ public class ProperNounProcessor implements Processor<Character> {
 	private Atom whitSpaceAtom = factory.createWhiteSpaceAtom();
 	private Atom punctuationAtom = factory.createPunctuationAtom();
 
-	public ProperNounProcessor(Dictionary masterDictionary) throws URISyntaxException, IOException {
+	public ProperNounProcessor(Dictionary masterDictionary)
+			throws URISyntaxException, IOException {
 		this.properNouns = new ArrayList<>();
-		URL url  = this.getClass().getClassLoader().
-				getResource("resources/NER.txt");
-		Path path = Paths.get(url.toURI());
-		BufferedReader bf = new BufferedReader(new FileReader(path.toFile()));
-		for (String line = bf.readLine(); line != null; line = bf.readLine())
-		{
+		InputStream is = ClassLoader
+				.getSystemResourceAsStream("resources/NER.txt");
+		Reader r;
+		r = new InputStreamReader(is);
+		BufferedReader bf = new BufferedReader(r);
+		for (String line = bf.readLine(); line != null; line = bf.readLine()) {
 			properNouns.add(line);
 		}
 		this.masterDictionary = masterDictionary;
