@@ -39,10 +39,15 @@ public class ZipFolderParser implements FolderParser {
 			Path root = zipfs.getPath("/");
 			Files.walk(root, FileVisitOption.FOLLOW_LINKS)
 					.filter(this::ignorePath).filter((p)->!Files.isDirectory(p))
+					// Parse in parallel
+					.parallel()
 					.forEach(
 							(p2) -> {
 								try {
-									folder.getDocuments().add(documentParser.parse(p2));
+									Document d = documentParser.parse(p2);
+									synchronized (this) {
+										folder.getDocuments().add(d);
+									}
 								} catch (IOException e) {
 									throw new RuntimeException(e);
 								}

@@ -1,34 +1,34 @@
-Euclid
-Wales
-James Clerk Maxwell
-Powys
-Olympic Games
-Sea of Tranquility
-Llywelyn ap Gruffudd
-Oracle Corporation
-Antikythera
-Japan
-BFGS
-Moon
-Newton
-Carl Benjamin Boyer
-Venice
-North America
-Sun
-Roger de Montgomery
-Bible
-Apollo 11
-England
-Michael Collins
-Prince of Wales
-Neil Armstrong
-Shrewsbury
-King Henry III
-Pacific Ocean
-Isaac Newton
-Elements
-Montgomery Castle
-Buzz Aldrin
-Albert Einstein
-Robert of Belleme
 Earth
+Buzz Aldrin
+Sea of Tranquility
+Albert Einstein
+Newton
+Moon
+BFGS
+Antikythera
+Wales
+Euclid
+Montgomery Castle
+Oracle Corporation
+Llywelyn ap Gruffudd
+Japan
+Apollo 11
+Olympic Games
+Powys
+Bible
+Michael Collins
+North America
+Roger de Montgomery
+England
+Carl Benjamin Boyer
+Sun
+Prince of Wales
+Pacific Ocean
+Venice
+Shrewsbury
+Isaac Newton
+Neil Armstrong
+Elements
+King Henry III
+James Clerk Maxwell
+Robert of Belleme
