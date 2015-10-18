@@ -1,0 +1,1117 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<document>
+    <sentences>
+        <sentence>
+            <token>
+                <value>The</value>
+                <type>WORD</type>
+            </token>
+            <token>
+                <value> </value>
+                <type>WHITE_SPACE</type>
+            </token>
+            <token>
+                <value>term</value>
+                <type>WORD</type>
+            </token>
+            <token>
+                <value> </value>
+                <type>WHITE_SPACE</type>
+            </token>
+            <token>
+                <value>"</value>
+                <type>PUNCTUATION</type>
+            </token>
+            <token>
+                <value>First</value>
+                <type>WORD</type>
+            </token>
+            <token>
+                <value> </value>
+                <type>WHITE_SPACE</type>
+            </token>
+            <token>
+                <value>World</value>
+                <type>WORD</type>
+            </token>
+            <token>
+                <value> </value>
+                <type>WHITE_SPACE</type>
+            </token>
+            <token>
+                <value>War</value>
+                <type>WORD</type>
+            </token>
+            <token>
+                <value>"</value>
+                <type>PUNCTUATION</type>
+            </token>
+            <token>
+                <value> </value>
+                <type>WHITE_SPACE</type>
+            </token>
+            <token>
+                <value>was</value>
+                <type>WORD</type>
+            </token>
+            <token>
+                <value> </value>
+                <type>WHITE_SPACE</type>
+            </token>
+            <token>
+                <value>first</value>
+                <type>WORD</type>
+            </token>
+            <token>
+                <value> </value>
+                <type>WHITE_SPACE</type>
+            </token>
+            <token>
+                <value>used</value>
+                <type>WORD</type>
+            </token>
+            <token>
+                <value> </value>
+                <type>WHITE_SPACE</type>
+            </token>
+            <token>
+                <value>in</value>
+                <type>WORD</type>
+            </token>
+            <token>
+                <value> </value>
+                <type>WHITE_SPACE</type>
+            </token>
+            <token>
+                <value>September</value>
+                <type>WORD</type>
+            </token>
+            <token>
+                <value> </value>
+                <type>WHITE_SPACE</type>
+            </token>
+            <token>
+                <value>1914</value>
+                <type>WORD</type>
+            </token>
+            <token>
+                <value> </value>
+                <type>WHITE_SPACE</type>
+            </token>
+            <token>
+                <value>by</value>
+                <type>WORD</type>
+            </token>
+            <token>
+                <value> </value>
+                <type>WHITE_SPACE</type>
+            </token>
+            <token>
+                <value>the</value>
+                <type>WORD</type>
+            </token>
+            <token>
+                <value> </value>
+                <type>WHITE_SPACE</type>
+            </token>
+            <token>
+                <value>German</value>
+                <type>WORD</type>
+            </token>
+            <token>
+                <value> </value>
+                <type>WHITE_SPACE</type>
+            </token>
+            <token>
+                <value>philosopher</value>
+                <type>WORD</type>
+            </token>
+            <token>
+                <value> </value>
+                <type>WHITE_SPACE</type>
+            </token>
+            <token>
+                <value>Ernst Haeckel</value>
+                <type>PROPER_NOUN</type>
+            </token>
+            <token>
+                <value>,</value>
+                <type>PUNCTUATION</type>
+            </token>
+            <token>
+                <value> </value>
+                <type>WHITE_SPACE</type>
+            </token>
+            <token>
+                <value>who</value>
+                <type>WORD</type>
+            </token>
+            <token>
+                <value> </value>
+                <type>WHITE_SPACE</type>
+            </token>
+            <token>
+                <value>claimed</value>
+                <type>WORD</type>
+            </token>
+            <token>
+                <value> </value>
+                <type>WHITE_SPACE</type>
+            </token>
+            <token>
+                <value>that</value>
+                <type>WORD</type>
+            </token>
+            <token>
+                <value> </value>
+                <type>WHITE_SPACE</type>
+            </token>
+            <token>
+                <value>"</value>
+                <type>PUNCTUATION</type>
+            </token>
+            <token>
+                <value>there</value>
+                <type>WORD</type>
+            </token>
+            <token>
+                <value> </value>
+                <type>WHITE_SPACE</type>
+            </token>
+            <token>
+                <value>is</value>
+                <type>WORD</type>
+            </token>
+            <token>
+                <value> </value>
+                <type>WHITE_SPACE</type>
+            </token>
+            <token>
+                <value>no</value>
+                <type>WORD</type>
+            </token>
+            <token>
+                <value> </value>
+                <type>WHITE_SPACE</type>
+            </token>
+            <token>
+                <value>doubt</value>
+                <type>WORD</type>
+            </token>
+            <token>
+                <value> </value>
+                <type>WHITE_SPACE</type>
+            </token>
+            <token>
+                <value>that</value>
+                <type>WORD</type>
+            </token>
+            <token>
+                <value> </value>
+                <type>WHITE_SPACE</type>
+            </token>
+            <token>
+                <value>the</value>
+                <type>WORD</type>
+            </token>
+            <token>
+                <value> </value>
+                <type>WHITE_SPACE</type>
+            </token>
+            <token>
+                <value>course</value>
+                <type>WORD</type>
+            </token>
+            <token>
+                <value> </value>
+                <type>WHITE_SPACE</type>
+            </token>
+            <token>
+                <value>and</value>
+                <type>WORD</type>
+            </token>
+            <token>
+                <value> </value>
+                <type>WHITE_SPACE</type>
+            </token>
+            <token>
+                <value>character</value>
+                <type>WORD</type>
+            </token>
+            <token>
+                <value> </value>
+                <type>WHITE_SPACE</type>
+            </token>
+            <token>
+                <value>of</value>
+                <type>WORD</type>
+            </token>
+            <token>
+                <value> </value>
+                <type>WHITE_SPACE</type>
+            </token>
+            <token>
+                <value>the</value>
+                <type>WORD</type>
+            </token>
+            <token>
+                <value> </value>
+                <type>WHITE_SPACE</type>
+            </token>
+            <token>
+                <value>feared</value>
+                <type>WORD</type>
+            </token>
+            <token>
+                <value> </value>
+                <type>WHITE_SPACE</type>
+            </token>
+            <token>
+                <value>'</value>
+                <type>PUNCTUATION</type>
+            </token>
+            <token>
+                <value>Europe</value>
+                <type>PROPER_NOUN</type>
+            </token>
+            <token>
+                <value>an</value>
+                <type>WORD</type>
+            </token>
+            <token>
+                <value> </value>
+                <type>WHITE_SPACE</type>
+            </token>
+            <token>
+                <value>War</value>
+                <type>WORD</type>
+            </token>
+            <token>
+                <value>'</value>
+                <type>PUNCTUATION</type>
+            </token>
+            <token>
+                <value> </value>
+                <type>WHITE_SPACE</type>
+            </token>
+            <token>
+                <value>...</value>
+                <type>PUNCTUATION</type>
+            </token>
+            <token>
+                <value> </value>
+                <type>WHITE_SPACE</type>
+            </token>
+            <token>
+                <value>will</value>
+                <type>WORD</type>
+            </token>
+            <token>
+                <value> </value>
+                <type>WHITE_SPACE</type>
+            </token>
+            <token>
+                <value>become</value>
+                <type>WORD</type>
+            </token>
+            <token>
+                <value> </value>
+                <type>WHITE_SPACE</type>
+            </token>
+            <token>
+                <value>the</value>
+                <type>WORD</type>
+            </token>
+            <token>
+                <value> </value>
+                <type>WHITE_SPACE</type>
+            </token>
+            <token>
+                <value>first</value>
+                <type>WORD</type>
+            </token>
+            <token>
+                <value> </value>
+                <type>WHITE_SPACE</type>
+            </token>
+            <token>
+                <value>world</value>
+                <type>WORD</type>
+            </token>
+            <token>
+                <value> </value>
+                <type>WHITE_SPACE</type>
+            </token>
+            <token>
+                <value>war</value>
+                <type>WORD</type>
+            </token>
+            <token>
+                <value> </value>
+                <type>WHITE_SPACE</type>
+            </token>
+            <token>
+                <value>in</value>
+                <type>WORD</type>
+            </token>
+            <token>
+                <value> </value>
+                <type>WHITE_SPACE</type>
+            </token>
+            <token>
+                <value>the</value>
+                <type>WORD</type>
+            </token>
+            <token>
+                <value> </value>
+                <type>WHITE_SPACE</type>
+            </token>
+            <token>
+                <value>full</value>
+                <type>WORD</type>
+            </token>
+            <token>
+                <value> </value>
+                <type>WHITE_SPACE</type>
+            </token>
+            <token>
+                <value>sense</value>
+                <type>WORD</type>
+            </token>
+            <token>
+                <value> </value>
+                <type>WHITE_SPACE</type>
+            </token>
+            <token>
+                <value>of</value>
+                <type>WORD</type>
+            </token>
+            <token>
+                <value> </value>
+                <type>WHITE_SPACE</type>
+            </token>
+            <token>
+                <value>the</value>
+                <type>WORD</type>
+            </token>
+            <token>
+                <value> </value>
+                <type>WHITE_SPACE</type>
+            </token>
+            <token>
+                <value>word</value>
+                <type>WORD</type>
+            </token>
+            <token>
+                <value>."</value>
+                <type>PUNCTUATION</type>
+            </token>
+            <token>
+                <value>
+
+</value>
+                <type>WHITE_SPACE</type>
+            </token>
+        </sentence>
+        <sentence>
+            <token>
+                <value>Why</value>
+                <type>WORD</type>
+            </token>
+            <token>
+                <value> </value>
+                <type>WHITE_SPACE</type>
+            </token>
+            <token>
+                <value>did</value>
+                <type>WORD</type>
+            </token>
+            <token>
+                <value> </value>
+                <type>WHITE_SPACE</type>
+            </token>
+            <token>
+                <value>the</value>
+                <type>WORD</type>
+            </token>
+            <token>
+                <value> </value>
+                <type>WHITE_SPACE</type>
+            </token>
+            <token>
+                <value>war</value>
+                <type>WORD</type>
+            </token>
+            <token>
+                <value> </value>
+                <type>WHITE_SPACE</type>
+            </token>
+            <token>
+                <value>begin</value>
+                <type>WORD</type>
+            </token>
+            <token>
+                <value>?</value>
+                <type>PUNCTUATION</type>
+            </token>
+            <token>
+                <value> </value>
+                <type>WHITE_SPACE</type>
+            </token>
+        </sentence>
+        <sentence>
+            <token>
+                <value>The</value>
+                <type>WORD</type>
+            </token>
+            <token>
+                <value> </value>
+                <type>WHITE_SPACE</type>
+            </token>
+            <token>
+                <value>immediate</value>
+                <type>WORD</type>
+            </token>
+            <token>
+                <value> </value>
+                <type>WHITE_SPACE</type>
+            </token>
+            <token>
+                <value>trigger</value>
+                <type>WORD</type>
+            </token>
+            <token>
+                <value> </value>
+                <type>WHITE_SPACE</type>
+            </token>
+            <token>
+                <value>for</value>
+                <type>WORD</type>
+            </token>
+            <token>
+                <value> </value>
+                <type>WHITE_SPACE</type>
+            </token>
+            <token>
+                <value>war</value>
+                <type>WORD</type>
+            </token>
+            <token>
+                <value> </value>
+                <type>WHITE_SPACE</type>
+            </token>
+            <token>
+                <value>was</value>
+                <type>WORD</type>
+            </token>
+            <token>
+                <value> </value>
+                <type>WHITE_SPACE</type>
+            </token>
+            <token>
+                <value>the</value>
+                <type>WORD</type>
+            </token>
+            <token>
+                <value> </value>
+                <type>WHITE_SPACE</type>
+            </token>
+            <token>
+                <value>28</value>
+                <type>WORD</type>
+            </token>
+            <token>
+                <value> </value>
+                <type>WHITE_SPACE</type>
+            </token>
+            <token>
+                <value>June</value>
+                <type>WORD</type>
+            </token>
+            <token>
+                <value> </value>
+                <type>WHITE_SPACE</type>
+            </token>
+            <token>
+                <value>1914</value>
+                <type>WORD</type>
+            </token>
+            <token>
+                <value> </value>
+                <type>WHITE_SPACE</type>
+            </token>
+            <token>
+                <value>assassination</value>
+                <type>WORD</type>
+            </token>
+            <token>
+                <value> </value>
+                <type>WHITE_SPACE</type>
+            </token>
+            <token>
+                <value>of</value>
+                <type>WORD</type>
+            </token>
+            <token>
+                <value> </value>
+                <type>WHITE_SPACE</type>
+            </token>
+            <token>
+                <value>Archduke</value>
+                <type>WORD</type>
+            </token>
+            <token>
+                <value> </value>
+                <type>WHITE_SPACE</type>
+            </token>
+            <token>
+                <value>Franz Ferdinand</value>
+                <type>PROPER_NOUN</type>
+            </token>
+            <token>
+                <value> </value>
+                <type>WHITE_SPACE</type>
+            </token>
+            <token>
+                <value>of</value>
+                <type>WORD</type>
+            </token>
+            <token>
+                <value> </value>
+                <type>WHITE_SPACE</type>
+            </token>
+            <token>
+                <value>Austria</value>
+                <type>WORD</type>
+            </token>
+            <token>
+                <value>,</value>
+                <type>PUNCTUATION</type>
+            </token>
+            <token>
+                <value> </value>
+                <type>WHITE_SPACE</type>
+            </token>
+            <token>
+                <value>heir</value>
+                <type>WORD</type>
+            </token>
+            <token>
+                <value> </value>
+                <type>WHITE_SPACE</type>
+            </token>
+            <token>
+                <value>to</value>
+                <type>WORD</type>
+            </token>
+            <token>
+                <value> </value>
+                <type>WHITE_SPACE</type>
+            </token>
+            <token>
+                <value>the</value>
+                <type>WORD</type>
+            </token>
+            <token>
+                <value> </value>
+                <type>WHITE_SPACE</type>
+            </token>
+            <token>
+                <value>throne</value>
+                <type>WORD</type>
+            </token>
+            <token>
+                <value> </value>
+                <type>WHITE_SPACE</type>
+            </token>
+            <token>
+                <value>of</value>
+                <type>WORD</type>
+            </token>
+            <token>
+                <value> </value>
+                <type>WHITE_SPACE</type>
+            </token>
+            <token>
+                <value>Austria-Hungary</value>
+                <type>PROPER_NOUN</type>
+            </token>
+            <token>
+                <value>,</value>
+                <type>PUNCTUATION</type>
+            </token>
+            <token>
+                <value> </value>
+                <type>WHITE_SPACE</type>
+            </token>
+            <token>
+                <value>by</value>
+                <type>WORD</type>
+            </token>
+            <token>
+                <value> </value>
+                <type>WHITE_SPACE</type>
+            </token>
+            <token>
+                <value>Yugoslav</value>
+                <type>WORD</type>
+            </token>
+            <token>
+                <value> </value>
+                <type>WHITE_SPACE</type>
+            </token>
+            <token>
+                <value>nationalist</value>
+                <type>WORD</type>
+            </token>
+            <token>
+                <value> </value>
+                <type>WHITE_SPACE</type>
+            </token>
+            <token>
+                <value>Gavrilo Princip</value>
+                <type>PROPER_NOUN</type>
+            </token>
+            <token>
+                <value> </value>
+                <type>WHITE_SPACE</type>
+            </token>
+            <token>
+                <value>(</value>
+                <type>PUNCTUATION</type>
+            </token>
+            <token>
+                <value>19</value>
+                <type>WORD</type>
+            </token>
+            <token>
+                <value> </value>
+                <type>WHITE_SPACE</type>
+            </token>
+            <token>
+                <value>years</value>
+                <type>WORD</type>
+            </token>
+            <token>
+                <value> </value>
+                <type>WHITE_SPACE</type>
+            </token>
+            <token>
+                <value>old</value>
+                <type>WORD</type>
+            </token>
+            <token>
+                <value> </value>
+                <type>WHITE_SPACE</type>
+            </token>
+            <token>
+                <value>at</value>
+                <type>WORD</type>
+            </token>
+            <token>
+                <value> </value>
+                <type>WHITE_SPACE</type>
+            </token>
+            <token>
+                <value>the</value>
+                <type>WORD</type>
+            </token>
+            <token>
+                <value> </value>
+                <type>WHITE_SPACE</type>
+            </token>
+            <token>
+                <value>time</value>
+                <type>WORD</type>
+            </token>
+            <token>
+                <value>)</value>
+                <type>PUNCTUATION</type>
+            </token>
+            <token>
+                <value> </value>
+                <type>WHITE_SPACE</type>
+            </token>
+            <token>
+                <value>in</value>
+                <type>WORD</type>
+            </token>
+            <token>
+                <value> </value>
+                <type>WHITE_SPACE</type>
+            </token>
+            <token>
+                <value>Sarajevo</value>
+                <type>PROPER_NOUN</type>
+            </token>
+            <token>
+                <value>.</value>
+                <type>PUNCTUATION</type>
+            </token>
+            <token>
+                <value> </value>
+                <type>WHITE_SPACE</type>
+            </token>
+        </sentence>
+        <sentence>
+            <token>
+                <value>This</value>
+                <type>WORD</type>
+            </token>
+            <token>
+                <value> </value>
+                <type>WHITE_SPACE</type>
+            </token>
+            <token>
+                <value>set</value>
+                <type>WORD</type>
+            </token>
+            <token>
+                <value> </value>
+                <type>WHITE_SPACE</type>
+            </token>
+            <token>
+                <value>off</value>
+                <type>WORD</type>
+            </token>
+            <token>
+                <value> </value>
+                <type>WHITE_SPACE</type>
+            </token>
+            <token>
+                <value>a</value>
+                <type>WORD</type>
+            </token>
+            <token>
+                <value> </value>
+                <type>WHITE_SPACE</type>
+            </token>
+            <token>
+                <value>diplomatic</value>
+                <type>WORD</type>
+            </token>
+            <token>
+                <value> </value>
+                <type>WHITE_SPACE</type>
+            </token>
+            <token>
+                <value>crisis</value>
+                <type>WORD</type>
+            </token>
+            <token>
+                <value> </value>
+                <type>WHITE_SPACE</type>
+            </token>
+            <token>
+                <value>when</value>
+                <type>WORD</type>
+            </token>
+            <token>
+                <value> </value>
+                <type>WHITE_SPACE</type>
+            </token>
+            <token>
+                <value>Austria-Hungary</value>
+                <type>PROPER_NOUN</type>
+            </token>
+            <token>
+                <value> </value>
+                <type>WHITE_SPACE</type>
+            </token>
+            <token>
+                <value>delivered</value>
+                <type>WORD</type>
+            </token>
+            <token>
+                <value> </value>
+                <type>WHITE_SPACE</type>
+            </token>
+            <token>
+                <value>an</value>
+                <type>WORD</type>
+            </token>
+            <token>
+                <value> </value>
+                <type>WHITE_SPACE</type>
+            </token>
+            <token>
+                <value>ultimatum</value>
+                <type>WORD</type>
+            </token>
+            <token>
+                <value> </value>
+                <type>WHITE_SPACE</type>
+            </token>
+            <token>
+                <value>to</value>
+                <type>WORD</type>
+            </token>
+            <token>
+                <value> </value>
+                <type>WHITE_SPACE</type>
+            </token>
+            <token>
+                <value>the</value>
+                <type>WORD</type>
+            </token>
+            <token>
+                <value> </value>
+                <type>WHITE_SPACE</type>
+            </token>
+            <token>
+                <value>Kingdom</value>
+                <type>WORD</type>
+            </token>
+            <token>
+                <value> </value>
+                <type>WHITE_SPACE</type>
+            </token>
+            <token>
+                <value>of</value>
+                <type>WORD</type>
+            </token>
+            <token>
+                <value> </value>
+                <type>WHITE_SPACE</type>
+            </token>
+            <token>
+                <value>Serbia</value>
+                <type>PROPER_NOUN</type>
+            </token>
+            <token>
+                <value>,</value>
+                <type>PUNCTUATION</type>
+            </token>
+            <token>
+                <value> </value>
+                <type>WHITE_SPACE</type>
+            </token>
+            <token>
+                <value>and</value>
+                <type>WORD</type>
+            </token>
+            <token>
+                <value> </value>
+                <type>WHITE_SPACE</type>
+            </token>
+            <token>
+                <value>entangled</value>
+                <type>WORD</type>
+            </token>
+            <token>
+                <value> </value>
+                <type>WHITE_SPACE</type>
+            </token>
+            <token>
+                <value>international</value>
+                <type>WORD</type>
+            </token>
+            <token>
+                <value> </value>
+                <type>WHITE_SPACE</type>
+            </token>
+            <token>
+                <value>alliances</value>
+                <type>WORD</type>
+            </token>
+            <token>
+                <value> </value>
+                <type>WHITE_SPACE</type>
+            </token>
+            <token>
+                <value>formed</value>
+                <type>WORD</type>
+            </token>
+            <token>
+                <value> </value>
+                <type>WHITE_SPACE</type>
+            </token>
+            <token>
+                <value>over</value>
+                <type>WORD</type>
+            </token>
+            <token>
+                <value> </value>
+                <type>WHITE_SPACE</type>
+            </token>
+            <token>
+                <value>the</value>
+                <type>WORD</type>
+            </token>
+            <token>
+                <value> </value>
+                <type>WHITE_SPACE</type>
+            </token>
+            <token>
+                <value>previous</value>
+                <type>WORD</type>
+            </token>
+            <token>
+                <value> </value>
+                <type>WHITE_SPACE</type>
+            </token>
+            <token>
+                <value>decades</value>
+                <type>WORD</type>
+            </token>
+            <token>
+                <value> </value>
+                <type>WHITE_SPACE</type>
+            </token>
+            <token>
+                <value>were</value>
+                <type>WORD</type>
+            </token>
+            <token>
+                <value> </value>
+                <type>WHITE_SPACE</type>
+            </token>
+            <token>
+                <value>invoked</value>
+                <type>WORD</type>
+            </token>
+            <token>
+                <value>.</value>
+                <type>PUNCTUATION</type>
+            </token>
+            <token>
+                <value> </value>
+                <type>WHITE_SPACE</type>
+            </token>
+        </sentence>
+        <sentence>
+            <token>
+                <value>Within</value>
+                <type>WORD</type>
+            </token>
+            <token>
+                <value> </value>
+                <type>WHITE_SPACE</type>
+            </token>
+            <token>
+                <value>weeks</value>
+                <type>WORD</type>
+            </token>
+            <token>
+                <value>,</value>
+                <type>PUNCTUATION</type>
+            </token>
+            <token>
+                <value> </value>
+                <type>WHITE_SPACE</type>
+            </token>
+            <token>
+                <value>the</value>
+                <type>WORD</type>
+            </token>
+            <token>
+                <value> </value>
+                <type>WHITE_SPACE</type>
+            </token>
+            <token>
+                <value>major</value>
+                <type>WORD</type>
+            </token>
+            <token>
+                <value> </value>
+                <type>WHITE_SPACE</type>
+            </token>
+            <token>
+                <value>powers</value>
+                <type>WORD</type>
+            </token>
+            <token>
+                <value> </value>
+                <type>WHITE_SPACE</type>
+            </token>
+            <token>
+                <value>were</value>
+                <type>WORD</type>
+            </token>
+            <token>
+                <value> </value>
+                <type>WHITE_SPACE</type>
+            </token>
+            <token>
+                <value>at</value>
+                <type>WORD</type>
+            </token>
+            <token>
+                <value> </value>
+                <type>WHITE_SPACE</type>
+            </token>
+            <token>
+                <value>war</value>
+                <type>WORD</type>
+            </token>
+            <token>
+                <value> </value>
+                <type>WHITE_SPACE</type>
+            </token>
+            <token>
+                <value>and</value>
+                <type>WORD</type>
+            </token>
+            <token>
+                <value> </value>
+                <type>WHITE_SPACE</type>
+            </token>
+            <token>
+                <value>the</value>
+                <type>WORD</type>
+            </token>
+            <token>
+                <value> </value>
+                <type>WHITE_SPACE</type>
+            </token>
+            <token>
+                <value>conflict</value>
+                <type>WORD</type>
+            </token>
+            <token>
+                <value> </value>
+                <type>WHITE_SPACE</type>
+            </token>
+            <token>
+                <value>soon</value>
+                <type>WORD</type>
+            </token>
+            <token>
+                <value> </value>
+                <type>WHITE_SPACE</type>
+            </token>
+            <token>
+                <value>spread</value>
+                <type>WORD</type>
+            </token>
+            <token>
+                <value> </value>
+                <type>WHITE_SPACE</type>
+            </token>
+            <token>
+                <value>around</value>
+                <type>WORD</type>
+            </token>
+            <token>
+                <value> </value>
+                <type>WHITE_SPACE</type>
+            </token>
+            <token>
+                <value>the</value>
+                <type>WORD</type>
+            </token>
+            <token>
+                <value> </value>
+                <type>WHITE_SPACE</type>
+            </token>
+            <token>
+                <value>world</value>
+                <type>WORD</type>
+            </token>
+            <token>
+                <value>.</value>
+                <type>PUNCTUATION</type>
+            </token>
+        </sentence>
+    </sentences>
+</document>
