@@ -2,6 +2,7 @@ package dr.nlp.parser.impl;
 
 import dr.nlp.factory.DRNLPFactory;
 import dr.nlp.parser.DocumentParser;
+import dr.nlp.structure.Dictionary;
 import dr.nlp.structure.Document;
 import dr.nlp.token.type.TokenType;
 import dr.nlp.translator.DocumentTranslator;
@@ -26,7 +27,9 @@ public class DocumentParserImplIntegrationTest {
 	public void setUp() throws Exception {
 		factory = new DRNLPFactory();
 
-		parser = factory.createDocumentParser();
+		Dictionary masterDictionary = factory.createDictionary();
+
+		parser = factory.createDocumentParser(masterDictionary);
 		URL url  = this.getClass().getClassLoader().
 				getResource("resources/testDocument1.txt");
 		path = Paths.get(url.toURI());

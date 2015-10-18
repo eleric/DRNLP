@@ -25,6 +25,7 @@ import java.util.Optional;
  * Created by eleri_000 on 10/16/2015.
  */
 public class DocumentParserImpl implements DocumentParser {
+	Dictionary masterDictionary;
 	// Would normally inject in from some framework like Spring and
 	// configured it there.
 	private DRNLPFactory factory = new DRNLPFactory();
@@ -32,33 +33,41 @@ public class DocumentParserImpl implements DocumentParser {
 	// Would normally inject in from some framework like Spring and
 	// configured it there.
 	private List<Processor<Character>> processors;
-	{
+
+	// Would normally inject in from some framework like Spring and
+	// configured it there.
+	private Processor<Character> processor;
+
+	// Would normally inject in from some framework like Spring and
+	// configured it there.
+	private Dictionary terminationPunctuationDictionary;
+
+	public DocumentParserImpl(Dictionary masterDictionary) {
+		this.masterDictionary = masterDictionary;
 		processors = new ArrayList<>();
 		try {
-			processors.add(factory.createProperNounProcessor());
-		} catch (Exception e)
-		{
-			throw new RuntimeException("Failed to load ProperNounProcessor.", e);
+			processors.add(factory.createProperNounProcessor(masterDictionary));
+		} catch (Exception e) {
+			throw new RuntimeException("Failed to load ProperNounProcessor.",
+					e);
 		}
-		processors.add(factory.createWordProcessor());
-		processors.add(factory.createPunctuationProcessor());
-		processors.add(factory.createWhiteSpaceProcessor());
+		processors.add(factory.createWordProcessor(masterDictionary));
+		processors.add(factory.createPunctuationProcessor(masterDictionary));
+		processors.add(factory.createWhiteSpaceProcessor(masterDictionary));
+
+		processor = factory.createOrderedProcessor(processors);
+
+		terminationPunctuationDictionary = factory.createDictionary();
+		terminationPunctuationDictionary
+				.putToken(new Token(".", TokenType.PUNCTUATION));
+		terminationPunctuationDictionary
+				.putToken(new Token("?", TokenType.PUNCTUATION));
+		terminationPunctuationDictionary
+				.putToken(new Token("!", TokenType.PUNCTUATION));
+		terminationPunctuationDictionary
+				.putToken(new Token(".\"", TokenType.PUNCTUATION));
+
 	}
-
-	// Would normally inject in from some framework like Spring and
-	// configured it there.
-	private Processor<Character> processor = factory.createOrderedProcessor(processors);
-
-	// Would normally inject in from some framework like Spring and
-	// configured it there.
-	private Dictionary terminationPunctuationDictionary = factory.createDictionary();
-	{
-		terminationPunctuationDictionary.putToken(new Token(".", TokenType.PUNCTUATION));
-		terminationPunctuationDictionary.putToken(new Token("?", TokenType.PUNCTUATION));
-		terminationPunctuationDictionary.putToken(new Token("!", TokenType.PUNCTUATION));
-		terminationPunctuationDictionary.putToken(new Token(".\"", TokenType.PUNCTUATION));
-	}
-
 
 	@Override
 	public Document parse(Path path) throws IOException {
@@ -69,8 +78,7 @@ public class DocumentParserImpl implements DocumentParser {
 		dataInput = factory.createDataInput(path);
 
 		Optional<Sentence> sentenceOpt;
-		while ((sentenceOpt=parseNextSentence(dataInput)).isPresent())
-		{
+		while ((sentenceOpt = parseNextSentence(dataInput)).isPresent()) {
 			if (!sentenceOpt.get().getTokens().isEmpty()) {
 				document.getSentences().add(sentenceOpt.get());
 			}
@@ -82,8 +90,7 @@ public class DocumentParserImpl implements DocumentParser {
 	private Optional<Sentence> parseNextSentence(DataInput dataInput) {
 		Sentence sentence = factory.createSentence();
 		Optional<Token> tokenOpt;
-		if (dataInput.isEof())
-		{
+		if (dataInput.isEof()) {
 			return Optional.empty();
 		}
 		try {
@@ -91,25 +98,22 @@ public class DocumentParserImpl implements DocumentParser {
 				tokenOpt = processor.process(dataInput);
 				sentence.getTokens().add(tokenOpt.get());
 			}
-		} catch (EOFException e)
-		{
+		} catch (EOFException e) {
 			// No more sentences
 			return Optional.of(sentence);
 		}
 		return Optional.of(sentence);
 	}
 
-	private boolean isSentenceTerminated(Sentence sentence)
-	{
+	private boolean isSentenceTerminated(Sentence sentence) {
 		List<Token> tokens = sentence.getTokens();
 		int size = tokens.size();
-		if (size > 1)
-		{
-			Token last = tokens.get(size-1);
-			Token almostLast = tokens.get(size-2);
+		if (size > 1) {
+			Token last = tokens.get(size - 1);
+			Token almostLast = tokens.get(size - 2);
 
-			if (last.getType() == TokenType.WHITE_SPACE && terminationPunctuationDictionary.contains(almostLast))
-			{
+			if (last.getType() == TokenType.WHITE_SPACE
+					&& terminationPunctuationDictionary.contains(almostLast)) {
 				return true;
 			}
 		}

@@ -47,8 +47,8 @@ public class DRNLPFactory {
 		return new InMemoryArrayDataInput(path);
 	}
 
-	public DocumentParser createDocumentParser() {
-		return new DocumentParserImpl();
+	public DocumentParser createDocumentParser(Dictionary masterDictionary) {
+		return new DocumentParserImpl(masterDictionary);
 	}
 
 	public Processor createOrderedProcessor(
@@ -56,21 +56,21 @@ public class DRNLPFactory {
 		return new OrderedProcessor(processors);
 	}
 
-	public Processor createProperNounProcessor()
+	public Processor createProperNounProcessor(Dictionary masterDictionary)
 			throws IOException, URISyntaxException {
-		return new ProperNounProcessor();
+		return new ProperNounProcessor(masterDictionary);
 	}
 
-	public Processor createWordProcessor() {
-		return new WordProcessor();
+	public Processor createWordProcessor(Dictionary masterDictionary) {
+		return new WordProcessor(masterDictionary);
 	}
 
-	public Processor createWhiteSpaceProcessor() {
-		return new WhiteSpaceProcessor();
+	public Processor createWhiteSpaceProcessor(Dictionary masterDictionary) {
+		return new WhiteSpaceProcessor(masterDictionary);
 	}
 
-	public Processor createPunctuationProcessor() {
-		return new PunctuationProcessor();
+	public Processor createPunctuationProcessor(Dictionary masterDictionary) {
+		return new PunctuationProcessor(masterDictionary);
 	}
 
 	public Dictionary createDictionary() {

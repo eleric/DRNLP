@@ -4,6 +4,7 @@ import dr.nlp.atom.Atom;
 import dr.nlp.dataInput.DataInput;
 import dr.nlp.factory.DRNLPFactory;
 import dr.nlp.processor.Processor;
+import dr.nlp.structure.Dictionary;
 import dr.nlp.token.Token;
 import dr.nlp.token.type.TokenType;
 
@@ -23,11 +24,12 @@ public class ProperNounProcessor implements Processor<Character> {
 	// In a production system, this would most likely be injected from
 	// a framework.
 	private final List<String> properNouns;
+	Dictionary masterDictionary;
 	private final DRNLPFactory factory = new DRNLPFactory();
 	private Atom whitSpaceAtom = factory.createWhiteSpaceAtom();
 	private Atom punctuationAtom = factory.createPunctuationAtom();
 
-	public ProperNounProcessor() throws URISyntaxException, IOException {
+	public ProperNounProcessor(Dictionary masterDictionary) throws URISyntaxException, IOException {
 		this.properNouns = new ArrayList<>();
 		URL url  = this.getClass().getClassLoader().
 				getResource("resources/NER.txt");
@@ -37,6 +39,7 @@ public class ProperNounProcessor implements Processor<Character> {
 		{
 			properNouns.add(line);
 		}
+		this.masterDictionary = masterDictionary;
 	}
 
 	@Override
@@ -72,7 +75,11 @@ public class ProperNounProcessor implements Processor<Character> {
 
 	private Optional<Token> makeToken(String search)
 	{
-		return Optional.of(new Token(search, TokenType.PROPER_NOUN));
+		Token token = new Token(search, TokenType.PROPER_NOUN);
+		// Only 1 token needs to exist in memory that maps to the same token
+		// value/type.
+		token = masterDictionary.putToken(token);
+		return Optional.of(token);
 	}
 
 }
