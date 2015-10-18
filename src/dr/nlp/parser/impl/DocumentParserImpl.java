@@ -51,6 +51,8 @@ public class DocumentParserImpl implements DocumentParser {
 		terminationPunctuationDictionary.putToken(new Token("?", TokenType.PUNCTUATION));
 		terminationPunctuationDictionary.putToken(new Token("!", TokenType.PUNCTUATION));
 		terminationPunctuationDictionary.putToken(new Token(".\"", TokenType.PUNCTUATION));
+		terminationPunctuationDictionary.putToken(new Token("?\"", TokenType.PUNCTUATION));
+		terminationPunctuationDictionary.putToken(new Token("!\"", TokenType.PUNCTUATION));
 	}
 
 
