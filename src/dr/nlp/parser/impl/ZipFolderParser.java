@@ -9,10 +9,7 @@ import dr.nlp.structure.Document;
 import dr.nlp.structure.Folder;
 
 import java.io.IOException;
-import java.nio.file.FileSystem;
-import java.nio.file.FileSystems;
-import java.nio.file.Files;
-import java.nio.file.Path;
+import java.nio.file.*;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -40,24 +37,24 @@ public class ZipFolderParser implements FolderParser {
 
 		try (FileSystem zipfs = zfsp.newFileSystem(path, zip_properties)) {
 			Path root = zipfs.getPath("/");
-			Files.list(root).forEach((p)->{
-				if (Files.isDirectory(p))
-				{
-					try {
-						Files.list(p).filter((f)->!f.toString().startsWith("/_")).forEach(
-								(p2) -> {
-									try {
-										folder.getDocuments().add(documentParser.parse(p2));
-									} catch (IOException e) {
-										throw new RuntimeException(e);
-									}
-								});
-					} catch (IOException e) {
-						throw new RuntimeException(e);
-					}
-				}
-			});
+			Files.walk(root, FileVisitOption.FOLLOW_LINKS)
+					.filter(this::ignorePath).filter((p)->!Files.isDirectory(p))
+					.forEach(
+							(p2) -> {
+								try {
+									folder.getDocuments().add(documentParser.parse(p2));
+								} catch (IOException e) {
+									throw new RuntimeException(e);
+								}
+							});
 		}
 		return folder;
+	}
+
+	// Data file I was given to test with has _MACOSX folder that
+	// needs to be ignore
+	private boolean ignorePath(Path path)
+	{
+		return !path.toString().startsWith("/_");
 	}
 }
